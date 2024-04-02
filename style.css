@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(./assets/Segoe\ UI.ttf,./assets/Segoe\ UI.woff,./assets/Segoe\ UI.woff2) format('truetype');
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    /* background: black */
+
+}
+
+.container{
+    width: 100%;
+    min-height:160vh;
+    /* min-height: 100vh; */
+    position: relative;
+    background-color: coral;
+}
+.bgimg{
+    /* height: 100%; */
+    /* width: 100%; */
+    position: absolute;
+    
+    /* background-color: rgba(0, 0, 0, 0.442); */
+    /* z-index: 0; */
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+nav{
+    width: 100%;
+    margin-top: 2vh;
+    height: 5vw;
+    /* background: black; */
+    position: absolute;
+    z-index: 5;
+    
+
+}
+.logo{
+    width:15vw;
+    margin-left: 3%;
+    height: 100%;
+    /* background-color: red; */
+}
+.logo img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.formenclosure{
+    width: 65vh;
+    height: 100vh;
+    padding: 5vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.736);
+    position: absolute;
+    z-index: 6;
+    /* transform: translateX(-50%,-50%); */
+    /* top: 20%;
+    left: 20% */
+}
+
+/* .formenclosure h1{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 2.5vw;
+} */
+.formenclosure{
+    border-top: 2px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: centre;
+    
+
+}
+
+.tocentreform{
+    display: flex;
+    justify-content: center;
+    padding-top: 12vh;
+}
+
+/* .outerform{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+} */
+
+.innerenclosure{
+    display: flex;
+    /* padding: 0px 10px; */
+    flex-direction: column;
+    gap: 2vh;
+    /* width:200vh;
+    height:80%; */
+    /* background-color: rgb(50, 50, 9); */
+}
+
+.innerenclosure h3{
+text-align: center;
+}
+
+.innerenclosure #email, #pass{
+    width: 100%;
+    height: 5vh;
+    color: rgb(255, 255, 255);
+    
+    font-weight: 600;
+    background-color: rgba(240, 248, 255, 0.085);
+    padding: 25px;
+    border: 1px solid rgba(152, 152, 152, 0.433);
+    border-radius: 5px;
+    outline: none;
+}
+
+.innerenclosure #sign-in{
+    padding: 10px;
+    /* padding-bottom: 2px; */
+    color: white;
+    background-color: #E50914;
+    border-radius: 5px;
+    border: none;
+    font-size:medium;
+    font-family: Segoe UI;
+    font-weight: 600;
+}
+.innerenclosure #signin-code{
+    padding: 10px;
+    color: white;
+    background-color: #cacaca48;
+    border-radius: 5px;
+    border: none;
+    font-size:medium;
+    font-family: Segoe UI;
+    font-weight: 600;
+}
+
+.innerenclosure h3{
+    font-size: 2vh;
+    font-weight: 450;
+    color: rgb(200, 200, 200);
+}
+
+.innerenclosure #fp{
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+
+.innerenclosure #chkbx{
+    zoom: 1.4;
+    
+}
+
+.checkbox-remberme{
+    display: flex;
+    justify-content:flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.innerenclosure #newnet{
+    text-align: start;
+}
+
+.innerenclosure span{
+    color: white;
+    font-weight: 500;
+}
+
+.innerenclosure h5{
+    font-size: 1.7vh;
+    color: grey;
+    font-weight: 400;
+}
+.innerenclosure h5 span{
+    color: rgb(86, 86, 227);;
+}
+
+.innerenclosure h1{
+    padding-bottom: 4%
+}
+
+.footercontainer{
+    background-color: #00000093;
+    color: #f9f1f1;
+    height:250px;
+    width: 100%;
+    position: absolute;
+    top:100;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.alinks{
+    /* text-align: start; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 60%;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+    /* row-gap: 20px; */
+    padding-top: 10px;
+    
+}
+
+.footercontainer a{
+    font-size: smaller;
+    text-size-adjust: 10px;
+    /* border:  */
+    border-bottom:1px solid #8b8b8b;;
+    color: rgb(164, 164, 164);
+}
